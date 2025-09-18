@@ -1,0 +1,24 @@
+{
+  "originHash" : "9ec3522f37edf4ea571fd2302d628c9348c5d05ee9263e58961e369c86edaa0c",
+  "pins" : [
+    {
+      "identity" : "agb-common",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:NANG-SAN-KHAM/agb-common.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ea8e1533c8ac2e80e49b34242dc8e63e67fa32c7"
+      }
+    },
+    {
+      "identity" : "jwtdecode.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/JWTDecode.swift.git",
+      "state" : {
+        "revision" : "36a5ce735a61c4bc119593f43ce2c027b4ca7392",
+        "version" : "3.3.0"
+      }
+    }
+  ],
+  "version" : 3
+}
