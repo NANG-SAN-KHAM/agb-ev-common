@@ -12,16 +12,19 @@ import SwiftUI
 public extension Font {
     // inter
     static func inter(size: CGFloat, weight: Font.Weight = .regular) -> Font {
+        FontRegistrer.registerIfNeeded()
         return .custom(InterFont(weight: weight).rawValue, size: size)
     }
     
     // netrox --- netrox only has .regular
     static func neotrax(size: CGFloat) -> Font {
+        FontRegistrer.registerIfNeeded()
         return .custom(AppFontFamily.neotrax.rawValue, size: size).weight(.regular)
     }
     
     // adventpro
     static func adventpro(size: CGFloat, weight: Font.Weight = .regular) -> Font {
+        FontRegistrer.registerIfNeeded()
         return .custom(AdventProFont(weight: weight).rawValue, size: size)
     }
 }

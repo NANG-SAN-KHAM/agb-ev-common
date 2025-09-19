@@ -9,7 +9,7 @@ import SwiftUI
 
 public extension View {
     func primaryButton(
-        backgroundColor: Color = Color.theme.accent,
+        backgroundColor: Color = Color.theme.primaryColor,
         foregroundColor: Color = .white,
         font: Font = AppFontFamily.current.generateFont(size: 14, weight: .semibold),
         cornerRadius: CGFloat = 4,

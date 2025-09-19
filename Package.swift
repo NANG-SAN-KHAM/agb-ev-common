@@ -9,7 +9,6 @@ let package = Package(
         .iOS(.v16)
     ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "AGBEVCommon",
             targets: ["AGBEVCommon"]
@@ -17,20 +16,17 @@ let package = Package(
     ],
     dependencies: [
         // AGB Common
-        .package(url: "git@github.com:NANG-SAN-KHAM/agb-common.git", branch: "main")
+        .package(url: "git@github.com:NANG-SAN-KHAM/AGBCommon.git", branch: "main")
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "AGBEVCommon",
             dependencies: [
-                .product(name: "AGBCommon", package: "agb-common")   
+                .product(name: "AGBCommon", package: "agbcommon")
             ],
             resources: [
                 .process("Resources")
             ]
         ),
-        
     ]
 )
